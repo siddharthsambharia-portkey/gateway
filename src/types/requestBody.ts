@@ -78,6 +78,9 @@ export interface Options {
   awsAccessKeyId?: string;
   awsSessionToken?: string;
   awsRegion?: string;
+  awsAuthType?: string;
+  awsRoleArn?: string;
+  awsExternalId?: string;
 
   /** Stability AI specific */
   stabilityClientId?: string;
@@ -314,6 +317,9 @@ export interface Params {
   };
   // Google Vertex AI specific
   safety_settings?: any;
+  // Anthropic specific
+  anthropic_beta?: string;
+  anthropic_version?: string;
 }
 
 interface Examples {
